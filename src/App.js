@@ -67,7 +67,7 @@ export default function App() {
         <li><a style="color:white;" target="_blank" href="https://github.com/suganthsugi/quick-quiz-server">Quick Quiz<br/> - A quiz platform - A backend of a quiz platform which uses nodejs and express framework for backend and react for frontned</a><br/><br /></li>
         <li><a style="color:white;" target="_blank" href="https://github.com/suganthsugi/e-commerce">ShopTing<br/>  - A Ecommerce website - A fullstack e-commerce website made with django for backend and bootstrap for frontend</a><br/><br /></li>
         <li><a style="color:white;" target="_blank" href="https://pentafox.in/">BlogIt<br/>  - A Social media blogging application. Working with Pentafox Technologies - Under Developement</a></li>
-        <ul><br/>`;
+        </ul><br/>`;
         setVal(prevVal => prevVal + newHTML);
       }
       else if (currInput[1] === 'Education.txt') {
