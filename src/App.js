@@ -55,7 +55,7 @@ export default function App() {
         <li><a style="color:white;" href="https://www.linkedin.com/in/gsuganth/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
         <li><a style="color:white;" href="mailto:suganthjayanthi@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></li>
         <li><a style="color:white;" href="https://github.com/suganthsugi" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-        <li><a style="color:white;" href="tel:+19025436252">9025436252</a></li>
+        <li><a style="color:white;" href="tel:+919025436252">9025436252</a></li>
       </ul></div>
       <br/>`;
         setVal(prevVal => prevVal + newHTML);
