@@ -35,11 +35,8 @@ export default function App() {
     }
     // console.log(currInput);
     if (currInput.length === 1 && currInput[0] === 'help') {
-      const newHTML = `>${inval}<br />help --for finding commands<br />ls --for listing files<br />cat [argument] --for opening files<br />theme [argument] --to change the theme<br />clear --to clear the terminal<br />exit --to exit<br /><br />`;
+      const newHTML = `>${inval}<br />help --for finding commands<br />ls --for listing files<br />cat [argument] --for opening files<br />theme [argument] --to change the theme<br />clear --to clear the terminal<br /><br />`;
       setVal(prevVal => prevVal + newHTML);
-    }
-    else if(currInput.length===1 && currInput[0]==='exit') {
-      window.close();
     }
     else if (currInput.length === 1 && currInput[0] === 'ls') {
       const newHTML = `>${inval}<br />About.txt<br />Projects.txt<br />Education.txt<br />Contact.txt<br/><br/>`;
