@@ -38,6 +38,9 @@ export default function App() {
       const newHTML = `>${inval}<br />help --for finding commands<br />ls --for listing files<br />cat [argument] --for opening files<br />clear --to clear the terminal<br /><br />`;
       setVal(prevVal => prevVal + newHTML);
     }
+    else if(currInput.length===1 && currInput[0]==='exit') {
+      window.close();
+    }
     else if (currInput.length === 1 && currInput[0] === 'ls') {
       const newHTML = `>${inval}<br />About.txt<br />Projects.txt<br />Education.txt<br />Contact.txt<br/><br/>`;
       setVal(prevVal => prevVal + newHTML);
@@ -86,6 +89,32 @@ export default function App() {
         setVal(prevVal => prevVal + newHTML);
       }
     }
+    else if (currInput.length === 2 && currInput[0] === 'theme') {
+      if (currInput[1] === 'hacker') {
+        const body = document.body;
+        const elements = document.querySelectorAll('*');
+        body.style.cssText = 'background-color: black !important; color: #2de327 !important';
+        for (let i = 0; i < elements.length; i++) {
+          if (true) {
+            elements[i].style.color = '#2de327';
+          }
+        }
+      }
+      else if (currInput[1] === 'windows') {
+        const body = document.body;
+        const elements = document.querySelectorAll('*');
+        body.style.cssText = 'background-color: black !important; color: white !important';
+        for (let i = 0; i < elements.length; i++) {
+          if (true) {
+            elements[i].style.color = 'white';
+          }
+        }
+      }
+      else {
+        const newHTML = `>${inval}<br />Command not found<br/><br/>`;
+        setVal(prevVal => prevVal + newHTML);
+      }
+    }
     else {
       const newHTML = `>${inval}<br />Command not found<br/><br/>`;
       setVal(prevVal => prevVal + newHTML);
@@ -111,7 +140,7 @@ export default function App() {
 
         <div className='text-light' dangerouslySetInnerHTML={{ __html: val }}></div>
 
-        <lable htmlFor='inp' className='inline-label'>alien@Suganth-Portfolio<span className='text-light'>:<span className='text-primary'>~</span>$</span></lable>
+        <label htmlFor='inp' className='inline-label'>alien@Suganth-Portfolio<span className='text-light'>:<span className='text-primary'>~</span>$</span></label>
         <input
           id='inp'
           className='inline-input'
