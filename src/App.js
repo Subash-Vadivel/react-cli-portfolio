@@ -35,7 +35,7 @@ export default function App() {
     }
     // console.log(currInput);
     if (currInput.length === 1 && currInput[0] === 'help') {
-      const newHTML = `>${inval}<br />help --for finding commands<br />ls --for listing files<br />cat [argument] --for opening files<br />clear --to clear the terminal<br /><br />`;
+      const newHTML = `>${inval}<br />help --for finding commands<br />ls --for listing files<br />cat [argument] --for opening files<br />theme [argument] --to change the theme<br />clear --to clear the terminal<br />exit --to exit<br /><br />`;
       setVal(prevVal => prevVal + newHTML);
     }
     else if(currInput.length===1 && currInput[0]==='exit') {
