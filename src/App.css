@@ -28,3 +28,6 @@ input:hover {
   .green{
     color: rgb(38, 163, 104, 255);
   }
+  a{
+    text-decoration: none;
+  }
